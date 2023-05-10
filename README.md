@@ -1,2 +1,3 @@
 # Amd
-Pelajar dari Politeknik Elektronika Negeri Surabaya
+Selamat bergabung pada Amd github
+
