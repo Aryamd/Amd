@@ -1,4 +1,4 @@
-package pa_pbo;
+package projekakhir_pbo;
 
 import java.util.ArrayList;
 
@@ -17,8 +17,8 @@ public class User {
         }
     }
     
-    // Tambah fitur sendiri++
-    public void tambahFiturSendiri() {
+    // menambahkan  fitur sendiri 
+    public void menambahkanFiturSendiri() {
         System.out.println("Fitur tambahan dari User");
     }
 }
