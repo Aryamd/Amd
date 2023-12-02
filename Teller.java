@@ -1,6 +1,6 @@
-package pa_pbo;
+package projekakhir_pbo;
 
-class Teller extends Admin {
+class Teller extends admine {
     public Teller(Bank bank) {
         super(bank);
     }
