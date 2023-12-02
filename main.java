@@ -1,18 +1,24 @@
 package pa_pbo;
 
-import java.util.ArrayList;
+public class Main {
+    public static void main(String[] args) {
+        Rekening rekeningNasabah1 = new Rekening(1000);
+        Nasabah nasabah1 = new Nasabah("John Doe", rekeningNasabah1);
+        Rekening rekeningNasabah2 = new Rekening(500);
+        Nasabah nasabah2 = new Nasabah("Jane Doe", rekeningNasabah2);
 
-class Admin {
-    private Bank bank;
+        Bank bank = new Bank();
+        bank.tambahNasabah(nasabah1);
+        bank.tambahNasabah(nasabah2);
 
-    public Admin(Bank bank) {
-        this.bank = bank;
-    }
+        Admin admin = new Admin(bank);
+        admin.lihatInfoNasabah();
 
-    public void lihatInfoNasabah() {
-        System.out.println("Seluruh Informasi Nasabah:");
-        for (Nasabah nasabah : bank.getNasabahList()) {
-            nasabah.lihatInfo();
-        }
+        Teller teller = new Teller(bank);
+        teller.prosesSetoran(nasabah1, 200);
+
+        NasabahBiasa nasabahBiasa = new NasabahBiasa(nasabah1);
+        nasabahBiasa.lihatInfoSendiri();
+        nasabahBiasa.tambahFiturSendiri();
     }
 }
