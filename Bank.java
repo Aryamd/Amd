@@ -1,6 +1,6 @@
 package projekakhirUas_pbo;
 
-import java.until.ArrayList;
+import java.util.ArrayList;
 
 public class Bank {
     private ArrayList<Nasabah> nasabahList;
