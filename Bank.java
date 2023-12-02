@@ -1,6 +1,6 @@
-package p_pbo;
+package projekakhirUas_pbo;
 
-import java.util.ArrayList;
+import java.until.ArrayList;
 
 public class Bank {
     private ArrayList<Nasabah> nasabahList;
@@ -19,7 +19,7 @@ public class Bank {
     
     public void transfer(Nasabah pengirim, Nasabah penerima, double jumlah) {
         if (pengirim.getNama().equals(penerima.getNama())) {
-            System.out.println("Transfer gagal. Nasabah pengiirm dan penerima sama.");
+            System.out.println("Transfer gagal. Nasabah pengirim dan penerima sama.");
             return;
         }
         
