@@ -1,6 +1,6 @@
-package projekakhir_pbo;
+package projekakhirUas_pbo;
 
-class Teller extends admine {
+class Teller extends Admin {
     public Teller(Bank bank) {
         super(bank);
     }
